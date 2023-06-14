@@ -1,5 +1,7 @@
 package team_work;
 
+import javax.swing.*;
+
 public class HumanPlayer extends Player {
 
 
@@ -8,6 +10,11 @@ public class HumanPlayer extends Player {
     }
 
     public void makeStep(String text){
-        //TODO Max
+        String coords = JOptionPane.showInputDialog(null,
+                text + "\nEnter cell coorditanes:");
+        String[] data = coords.split(" ");
+        int row = Integer.parseInt(data[0]);
+        int col = Integer.parseInt(data[1]);
+        arr[row][col] = symbol;
     }
 }
