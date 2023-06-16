@@ -13,9 +13,11 @@ public class Game {
     }
     public void startGame() {
         String input = JOptionPane.showInputDialog(null,
-                "1. Человек vs Человек\n" +
-                        "2. Человек vs Компьютер\n" +
-                        "3. Компьютер vs Компьютер");
+                """
+                        1. Человек vs Человек
+                        2. Человек vs Компьютер
+                        3. Компьютер vs Компьютер
+                        """);
         if (input == null) return;
         Player player1=null;
         Player player2=null;
